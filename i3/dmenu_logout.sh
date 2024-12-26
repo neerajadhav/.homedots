@@ -17,20 +17,18 @@ Hibernate
 Suspend"
 
 # Open menu
-selectionold=$(printf '%s' "$items" | $DMENU -i -l 10 -p 'Power Menu' -fn 'Ubuntu Mono:bold:pixelsize=15' -nb "$color0" -nf "$color15" -sb "$color3" -sf "$color15")
+selection=$(printf '%s' "$items" | $DMENU -i -l 10 -p 'Power Menu' -fn 'Ubuntu Mono:bold:pixelsize=15' -nb "$color0" -nf "$color15" -sb "$color3" -sf "$color15")
 
 # selection=$(printf '%s' "$items" | dmenu -i -l 10 -p 'Power Menu' -fn 'Ubuntu Mono:bold:pixelsize=15')
 
 case $selection in
 Logout)
-    logout
+    i3-msg exit
     ;;
 Poweroff)
-    logout
     systemctl poweroff
     ;;
 Reboot)
-    logout
     systemctl reboot
     ;;
 Hibernate)

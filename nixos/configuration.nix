@@ -117,16 +117,7 @@
     isNormalUser = true;
     description = "Super";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      brave
-      xarchiver
-      mendeley
-      vscode
-      nemo-with-extensions
-      joplin-desktop
-      dropbox
-      conda
-    ];
+    packages = with pkgs; [];
   };
 
   environment.systemPackages = with pkgs; [
@@ -134,21 +125,20 @@
     dmenu
     git
     gnome-keyring
-    nerdfonts
     networkmanagerapplet
     nitrogen
     pasystray
     picom
     polkit_gnome
     pulseaudioFull
-    rofi
+    # rofi
     vim
     unrar
     unzip
     lxappearance-gtk2
     pywal
     autotiling
-    xss-lock
+    # xss-lock
     xfce.xfce4-screenshooter
     betterlockscreen
     bluez-tools
@@ -160,10 +150,9 @@
     python314
     gsettings-desktop-schemas
     dconf-editor
-    wpgtk
-    polybar
+    # polybar
     killall
-    # zlib
+    zlib
     htop
     neofetch
     arandr
