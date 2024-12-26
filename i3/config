@@ -158,6 +158,8 @@ bar {
 # for_window [title="Virtual Machine Manager"] move to workspace $ws4
 # for_window [class="obsidian"] move to workspace $ws5
 
+for_window [class="Brave"] border pixel 2
+
 # Window borders
 #default_border pixel 4
 gaps inner 0
