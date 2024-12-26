@@ -42,36 +42,36 @@ order += "tztime localtime"
 # Purple:       #614BC3 #7764CB #8E7ED4 #A498DC #BBB1E5 #D1CBED #E8E5F6 #FFFFFF
 
 volume master {
-        format = "<span color='#6F61C0' size='large'>  </span><span bgcolor='#614BC3' foreground='white'> %volume </span>"
-        format_muted = "<span color='#D32F2F' size='large'>󰝟 </span><span bgcolor='#D32F2F' foreground='white'> Muted </span>"
+        format = "<span color='#FFFFFF' size='large'>  </span><span bgcolor='#E4E2EE' foreground='black'> %volume </span>"
+        format_muted = "<span color='#D32F2F' size='large'>󰝟 </span><span bgcolor='#D32F2F' foreground='black'> Muted </span>"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
 }
 
 wireless _first_ {
-        format_up = "<span color='#6F61C0' size='large'>  </span><span bgcolor='#6F61C0' foreground='white'>%quality %essid </span>"
-        format_down = "<span color='#D32F2F' size='large'>  </span><span bgcolor='#D32F2F' foreground='white'> Offline </span>"
+        format_up = "<span color='#E4E2EE' size='large'>  </span><span bgcolor='#C9C5DD' foreground='black'>%quality %essid </span>"
+        format_down = "<span color='#D32F2F' size='large'>  </span><span bgcolor='#D32F2F' foreground='black'> Offline </span>"
 }
 
 disk "/" {
-        format = "<span color='#8BE8E5' size='large'>  </span><span bgcolor='#8BE8E5' foreground='black'> %avail Free </span>"
+        format = "<span color='#C9C5DD' size='large'>  </span><span bgcolor='#AFA8CD' foreground='black'> %avail Free </span>"
         prefix_type = custom
 }
 
 memory {
-        format = "<span color='#33BBC5' size='large'>󰍛 </span><span bgcolor='#33BBC5' foreground='black'> %used </span>"
+        format = "<span size='large'>󰍛 </span><span bgcolor='#948BBC' foreground='black'> %used </span>"
         threshold_degraded = "10%"
         format_degraded = "<span color='#D32F2F' size='large'>󰍛 </span><span bgcolor='#D32F2F' foreground='black'> %free Free</span>"
 }
 
 cpu_temperature 0 {
-        format = "<span size='large'>󰈸 </span><span bgcolor='#85E6C5' foreground='black'> %degrees °C </span>"
+        format = "<span size='large'>󰈸 </span><span bgcolor='#7A6EAC' foreground='black'> %degrees °C </span>"
         max_threshold = 55
 }
 
 battery 1 {
-        format = "<span color='#8BE8E5' size='large'>%status </span><span bgcolor='#8BE8E5' foreground='black'> %percentage (%remaining) </span>"
+        format = "<span size='large'>%status </span><span bgcolor='#45358B' foreground='white'> %percentage (%remaining) </span>"
         format_down = "No battery"
         status_chr = "⚡DC"
         status_bat = "AC"
@@ -83,12 +83,13 @@ battery 1 {
 }
 
 tztime localdate {
-        format = "<span color='#D5FFE4' size='large'>  </span><span bgcolor='#D5FFE4' foreground='black'> %a %d-%m-%Y </span>"
+        format = "<span size='large'>  </span><span bgcolor='#45358B' foreground='white'> %a %d-%m-%Y </span>"
 }
 
 tztime localtime {
-        format = "<span color='#D5FFE4' size='large'>  </span><span bgcolor='#D5FFE4' foreground='black'> %I:%M %p </span> "
+        format = "<span size='large'>  </span><span bgcolor='#45358B' foreground='white'> %I:%M %p </span> "
 }
+
 
 #volume master {
 #        format = "<span foreground='#4FC3F7' size='large'> </span><span color='#4FC3F7'> %volume </span>"
