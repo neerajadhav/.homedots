@@ -1,5 +1,5 @@
 set $mod Mod4
-font pango:monospace 0
+font pango:monospace 9
 
 # Volume Control
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -159,7 +159,7 @@ bar {
 # for_window [class="obsidian"] move to workspace $ws5
 
 # Window borders
-default_border pixel 4
+#default_border pixel 4
 gaps inner 0
 
 # Autostart
