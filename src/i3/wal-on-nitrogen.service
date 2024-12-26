@@ -1,0 +1,13 @@
+[Unit]
+Description=PyWal Reload on Nitrogen
+After=network.target
+
+[Service]
+User=super
+Group=super
+ExecStart=/home/super/.dotfiles/src/i3/autostart.sh
+Restart=on-failure
+RestartSec=5 
+
+[Install]
+WantedBy=multi-user.target
