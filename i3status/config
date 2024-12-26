@@ -39,6 +39,7 @@ order += "tztime localtime"
 # Light:        #FAFAFA #F5F5F5 #EEEEEE #E0E0E0 #BDBDBD #9E9E9E #757575 #616161
 # Warm:         #FF8A65 #FFAB91 #FFCCBC #FFE0B2 #FFCC80 #FFB74D #FFA726 #FF9800
 # Cool:         #4FC3F7 #4DD0E1 #4DB6AC #81C784 #AED581 #DCE775 #FFF176 #FFD54F
+# Purple:       #614BC3 #7764CB #8E7ED4 #A498DC #BBB1E5 #D1CBED #E8E5F6 #FFFFFF
 
 volume master {
         format = "<span color='#6F61C0' size='large'>  </span><span bgcolor='#614BC3' foreground='white'> %volume </span>"
