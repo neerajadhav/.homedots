@@ -28,7 +28,6 @@
     brave
     xarchiver
     mendeley
-    vscode
     vscodium-fhs
     nemo-with-extensions
     joplin-desktop
