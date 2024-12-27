@@ -170,29 +170,30 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pa-applet
 exec --no-startup-id dropbox &
 
-# Start xidlehook to handle conditions
-exec --no-startup-id xidlehook \
-  --not-when-fullscreen \
-  --not-when-audio \
-  --timer 50 \
-    "brightnessctl set 50; xautolock -disable" \
-    "brightnessctl set 153; xautolock -enable" &
+# # Start xidlehook to handle conditions
+# exec --no-startup-id xidlehook \
+#   --not-when-fullscreen \
+#   --not-when-audio \
+#   --timer 50 \
+#     "brightnessctl set 50; xautolock -disable" \
+#     "brightnessctl set 153; xautolock -enable" &
 
-# Start xautolock with your desired settings
-exec --no-startup-id xautolock \
-  -time 2 \
-  -locker 'systemctl suspend' \
-  -notify 60 \
-  -notifier 'betterlockscreen -l dimblur | xset dpms force off' \
-  -detectsleep \
-  -lockaftersleep &
+# # Start xautolock with your desired settings
+# exec --no-startup-id xautolock \
+#   -time 2 \
+#   -locker 'systemctl suspend' \
+#   -notify 60 \
+#   -notifier 'betterlockscreen -l dimblur | xset dpms force off' \
+#   -detectsleep \
+#   -lockaftersleep &
 
 
 exec --no-startup-id gnome-keyring-daemon --start --components=ssh,secrets,pkcs11
 exec --no-startup-id dbus-update-activation-environment --all
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id ~/.config/i3/autostart.sh &
+exec --no-startup-id xscreensaver --no-splash &
 exec_always --no-startup-id "wal -R"
-exec_always --no-startup-id "nitrogen --restore"
+# exec_always --no-startup-id "nitrogen --restore"
 exec_always --no-startup-id "blueman-applet"
 exec_always --no-startup-id autotiling -l 2 &
