@@ -19,7 +19,7 @@ let
       lxappearance-gtk2
       pywal
       autotiling
-      xss-lock
+      # xss-lock
       xfce.xfce4-screenshooter
       betterlockscreen
       bluez-tools
@@ -38,18 +38,17 @@ let
       neofetch
       arandr
       pa_applet
+      xarchiver
     ];
 
     userApps = with pkgs; [
       motrix
-      asusctl
+      # asusctl
       gparted
       (nerdfonts.override { fonts = [ "Hack" ]; })
       brave
-      xarchiver
       mendeley
       vscodium-fhs
-      nemo-with-extensions
       joplin-desktop
       dropbox
       conda

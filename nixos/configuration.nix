@@ -18,15 +18,6 @@
     };
   };
 
-  # systemd.services.wal-on-nitrogen = {
-  # description = "Wal on nitrogen";
-  # wantedBy = [ "multi-user.target" ];
-  # serviceConfig = {
-  #     ExecStart = "/home/super/.dotfiles/src/i3/autostart.sh";
-  #     # Restart = "always";
-  #   };
-  # };
-  
   # Networking
   networking = {
     firewall = {
@@ -57,8 +48,6 @@
     };
   };
 
-  #sound.enable = true;
-
   services = {
     xserver = {
       xkb.layout = "us";
@@ -79,16 +68,9 @@
           enableXfwm = false;
         };
       };
-      #displayManager = {
-      #  lightdm.enable = true;
-      #  defaultSession = "xfce+i3";
-      #};
     };
-   # displayManager = {
-      #lightdm.enable = true;
-     # defaultSession = "xfce+i3"
-    #};
     gvfs.enable = true;
+    tumbler.enable = true;
     gnome.gnome-keyring.enable = true;
     blueman.enable = true;
     pipewire = {
@@ -112,7 +94,7 @@
     };
   };
 
-  # Edit the username below (replace 'neeraj')
+  # Edit the username below
   users.users.super = {
     isNormalUser = true;
     description = "Super";
@@ -123,7 +105,13 @@
   environment.systemPackages = with pkgs; [];
 
   programs = {
-    #thunar.enable = true;
+    thunar = {
+      enable = true;
+      plugins = with pkgs.xfce; [
+        thunar-archive-plugin
+        thunar-volman
+      ];
+    };
     dconf.enable = true;
   };
 
