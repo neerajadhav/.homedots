@@ -120,44 +120,7 @@
     packages = with pkgs; [];
   };
 
-  environment.systemPackages = with pkgs; [
-    alacritty
-    dmenu
-    git
-    gnome-keyring
-    networkmanagerapplet
-    nitrogen
-    pasystray
-    picom
-    polkit_gnome
-    pulseaudioFull
-    # rofi
-    vim
-    unrar
-    unzip
-    lxappearance-gtk2
-    pywal
-    autotiling
-    xss-lock
-    xfce.xfce4-screenshooter
-    betterlockscreen
-    bluez-tools
-    blueman
-    inotify-tools
-    brightnessctl
-    xidlehook
-    xautolock
-    python314
-    gsettings-desktop-schemas
-    dconf-editor
-    # polybar
-    killall
-    zlib
-    htop
-    neofetch
-    arandr
-    pa_applet
-  ];
+  environment.systemPackages = with pkgs; [];
 
   programs = {
     #thunar.enable = true;
