@@ -51,7 +51,7 @@ volume master {
 
 wireless _first_ {
         format_up = "<span color='#E4E2EE' size='large'>  </span><span bgcolor='#948BBC' foreground='black'>%quality %essid </span>"
-        format_down = "<span color='#D32F2F' size='large'>  </span><span bgcolor='#D32F2F' foreground='black'> Offline </span>"
+        format_down = "<span color='#D32F2F' size='large'>  </span><span bgcolor='#D32F2F' foreground='black'> No WiFi </span>"
 }
 
 disk "/" {

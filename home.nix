@@ -53,6 +53,7 @@ let
       dropbox
       conda
       xscreensaver
+      vlc
     ];
 
     appendApps = apps: systemApps ++ userApps ++ apps;
