@@ -73,8 +73,8 @@ cpu_temperature 0 {
 battery 1 {
         format = "<span size='large'>%status </span><span bgcolor='#45358B' foreground='white'> %percentage (%remaining) </span>"
         format_down = "No battery"
-        status_chr = "⚡DC"
-        status_bat = "AC"
+        status_chr = "⚡AC"
+        status_bat = "DC"
         status_unk = "? UNK"
         status_full = "󰂄 FULL"
         path = "/sys/class/power_supply/BAT%d/uevent"

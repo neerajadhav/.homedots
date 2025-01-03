@@ -34,7 +34,7 @@ let
       dconf-editor
       # polybar
       killall
-      zlib
+      # zlib
       htop
       neofetch
       arandr
