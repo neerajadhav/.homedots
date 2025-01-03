@@ -98,11 +98,21 @@
   users.users.super = {
     isNormalUser = true;
     description = "Super";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [];
   };
 
   environment.systemPackages = with pkgs; [];
+  
+  virtualisation = {
+    docker = {
+      enable = true;
+      rootless = {
+        enable = true;
+        setSocketVariable = true;
+      };
+    };
+  };
 
   programs = {
     thunar = {
