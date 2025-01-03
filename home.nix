@@ -17,6 +17,7 @@ let
       unrar
       unzip
       lxappearance-gtk2
+      libnotify
       pywal
       autotiling
       # xss-lock
