@@ -126,6 +126,7 @@ client.background $bg
 # Bar configuration
 bar {
     status_command i3status
+    # status_command i3blocks -c ~/.config/i3blocks/config
     bindsym button3 exec --no-startup-id jgmenu_run
     position top
     font pango:DejaVu Sans Mono 10
