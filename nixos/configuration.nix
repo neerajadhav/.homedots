@@ -21,9 +21,9 @@
   # Networking
   networking = {
     firewall = {
-      enable = true;
-      allowedTCPPorts = [];
-      allowedUDPPorts = [];
+      enable = false;
+      # allowedTCPPorts = [5432];
+      # allowedUDPPorts = [];
     };
     hostName = "Nimbus-21";
     networkmanager.enable = true;
