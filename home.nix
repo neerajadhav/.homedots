@@ -56,6 +56,7 @@ let
       conda
       xscreensaver
       vlc
+      onlyoffice-desktopeditors
     ];
 
     appendApps = apps: systemApps ++ userApps ++ apps;
