@@ -43,7 +43,7 @@ order += "tztime localtime"
 
 
 volume master {
-        format = "<span color='#00BFA5' size='large'> </span> <span bgcolor='black' foreground='#00BFA5'>%volume</span>"
+        format = "<span color='#00BFA5' size='large'> </span> <span foreground='#00BFA5'>%volume</span>"
         format_muted = "<span color='#D32F2F'> %volume</span>"
         device = "default"
         mixer = "Master"
@@ -51,33 +51,33 @@ volume master {
 }
 
 wireless _first_ {
-        format_up = "<span color='#3498DB' size='large'></span> <span bgcolor='black' foreground='#3498DB'> %quality %essid </span>"
+        format_up = "<span color='#3498DB' size='large'></span> <span foreground='#3498DB'> %quality %essid </span>"
         format_down = "<span color='#D32F2F'>  No Wifi</span>"
 }
 
 
 disk "/" {
-        format = "<span color='#27AE60' size='large'></span> <span bgcolor='black' foreground='#27AE60'>%avail</span>"
+        format = "<span color='#27AE60' size='large'></span> <span foreground='#27AE60'>%avail</span>"
         prefix_type = custom
 }
 
 memory {
-        format = "<span color='#8E44AD' size='large'></span> <span bgcolor='black' foreground='#8E44AD'>%used</span>"
+        format = "<span color='#8E44AD' size='large'></span> <span foreground='#8E44AD'>%used</span>"
         threshold_degraded = "10%"
         format_degraded = "MEMORY: %free"
 }
 
 cpu_temperature 0 {
-        format = "<span color='#D35400' size='large'>󱠇</span> <span bgcolor='black' foreground='#D35400'>%degrees °C</span>"
+        format = "<span color='#D35400' size='large'>󱠇</span> <span foreground='#D35400'>%degrees °C</span>"
         max_threshold = 50
 }
 
 tztime localdate {
-        format = "<span color='#F39C12' size='large'></span> <span bgcolor='black' foreground='#F39C12'>%a %d-%m-%Y</span>"
+        format = "<span color='#F39C12' size='large'></span> <span foreground='#F39C12'>%a %d-%m-%Y</span>"
 }
 
 battery 1 {
-        format = "<span color='#34e0bf' size='large'>%status</span> <span bgcolor='black' foreground='#34e0bf'> %percentage</span>"
+        format = "<span color='#34e0bf' size='large'>%status</span> <span foreground='#34e0bf'> %percentage</span>"
         format_down = "No battery"
         status_chr = "⚡"
         status_bat = ""
@@ -89,7 +89,7 @@ battery 1 {
 }
 
 tztime localtime {
-        format = "<span color='#00dddd' size='large'> </span><span bgcolor='black' foreground='#00dddd'>%I:%M %p</span> "
+        format = "<span color='#00dddd' size='large'> </span><span foreground='#00dddd'>%I:%M %p</span> "
 }
 
 disk "/home" {

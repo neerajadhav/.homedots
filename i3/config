@@ -114,9 +114,11 @@ bindsym $mod+Shift+e exec --no-startup-id "i3-nagbar -t warning -m 'You pressed 
 # Color and appearance
 set_from_resource $fg i3wm.color7 #f0f0f0
 set_from_resource $bg i3wm.color0 #f0f0f0
+set_from_resource $border i3wm.color4 #f0f0f0
 
 # Window styling
-client.focused #6F61C0 #6F61C0 #ffffff #6F61C0 #6F61C0
+# <colorclass> <border> <background> <text> <indicator> <child_border>
+client.focused $fg $fg $fg $fg $fg
 client.focused_inactive #232323 #232323 #ffffff #232323 #232323
 client.unfocused $bg $bg $fg $bg $bg
 client.urgent $bg $bg $fg $bg $bg
@@ -136,7 +138,8 @@ bar {
         background $bg
         statusline $fg
         separator $fg
-        focused_workspace #6F61C0 #614BC3 #ffffff
+        # <colorclass> <border> <background> <text>
+        focused_workspace $fg $fg $bg
         active_workspace #333333 #5f676a #ffffff
         inactive_workspace #192331 #111111 #888888
         urgent_workspace #D32F2F #900000 #ffffff
