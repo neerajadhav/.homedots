@@ -75,6 +75,7 @@ in{
       ".config/i3".source = ~/.homedots/i3;
       ".config/alacritty".source = ~/.homedots/alacritty;
       ".profile".source = ~/.homedots/.profile;
+      ".bashrc".source = ~/.homedots/.bashrc;
     };
 
     home.sessionVariables = {
