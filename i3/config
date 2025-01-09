@@ -130,7 +130,7 @@ bar {
     bindsym button3 exec --no-startup-id jgmenu_run
     position top
     font pango:DejaVu Sans Mono 10
-    separator_symbol " 󰇙 "
+    separator_symbol "  "
     # separator_symbol " "
     colors {
         background $bg
