@@ -166,7 +166,7 @@ bar {
 
 # Window borders
 default_border pixel 2
-gaps inner 0
+gaps inner 6
 
 # Autostart
 exec --no-startup-id dex --autostart --environment i3
