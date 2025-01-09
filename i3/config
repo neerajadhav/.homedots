@@ -131,6 +131,7 @@ bar {
     position top
     font pango:DejaVu Sans Mono 10
     separator_symbol " 󰇙 "
+    # separator_symbol " "
     colors {
         background $bg
         statusline $fg
