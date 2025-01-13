@@ -1,5 +1,7 @@
 #!/bin/sh
 
+picom &
+
 # File to monitor
 bg_file="$HOME/.config/nitrogen/bg-saved.cfg"
 
