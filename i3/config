@@ -118,7 +118,7 @@ set_from_resource $border i3wm.color4 #f0f0f0
 
 # Window styling
 # <colorclass> <border> <background> <text> <indicator> <child_border>
-client.focused $fg $fg $fg $fg $fg
+client.focused $fg $fg $bg $fg $fg
 client.focused_inactive #232323 #232323 #ffffff #232323 #232323
 client.unfocused $bg $bg $fg $bg $bg
 client.urgent $bg $bg $fg $bg $bg
