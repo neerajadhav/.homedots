@@ -20,10 +20,10 @@ order += "disk /"
 order += "memory"
 order += "cpu_temperature 0"
 order += "wireless _first_"
-order += "volume master"
 order += "battery 1"
 order += "tztime localdate"
 order += "tztime localtime"
+order += "volume master"
 # order += "load"
 # order += "cpu_usage"
 # order += "disk /home"
@@ -89,7 +89,7 @@ battery 1 {
 }
 
 tztime localtime {
-        format = "<span color='#00dddd' size='large'> </span><span>%I:%M %p</span> "
+        format = "<span color='#00dddd' size='large'> </span><span>%I:%M %p</span>"
 }
 
 disk "/home" {
