@@ -133,7 +133,7 @@ bar {
     position top
     font pango:DejaVu Sans Mono 10
     # separator_symbol "  "
-    separator_symbol " | "
+    separator_symbol " / "
     # separator_symbol " "
     colors {
         background $bg
@@ -142,7 +142,7 @@ bar {
         # <colorclass> <border> <background> <text>
         focused_workspace $fg $fg $bg
         active_workspace #333333 #5f676a #ffffff
-        inactive_workspace #192331 #111111 #888888
+        inactive_workspace $bg $bg $fg
         urgent_workspace #D32F2F #900000 #ffffff
         binding_mode #D32F2F #900000 #ffffff
     }
