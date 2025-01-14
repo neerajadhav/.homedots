@@ -41,6 +41,9 @@ let
       arandr
       pa_applet
       xarchiver
+      i3pystatus
+      dunst
+      mpd
     ];
 
     userApps = with pkgs; [
@@ -71,6 +74,7 @@ in{
 
     home.file = {
       ".config/i3status".source = ~/.homedots/i3status;
+      ".config/i3pystatus".source = ~/.homedots/i3pystatus;
       ".config/i3blocks".source = ~/.homedots/i3blocks;
       ".config/i3".source = ~/.homedots/i3;
       ".config/picom".source = ~/.homedots/picom;
