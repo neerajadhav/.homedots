@@ -41,9 +41,9 @@ let
       arandr
       pa_applet
       xarchiver
-      i3pystatus
+      # i3pystatus
       dunst
-      mpd
+      # mpd
     ];
 
     userApps = with pkgs; [

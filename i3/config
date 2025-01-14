@@ -127,7 +127,8 @@ client.background $bg
 
 # Bar configuration
 bar {
-    status_command i3pystatus -c ~/.config/i3pystatus/config.py
+    # status_command i3pystatus -c ~/.config/i3pystatus/config.py
+    status_command i3status
     bindsym button3 exec --no-startup-id jgmenu_run
     position top
     font pango:DejaVu Sans Mono 10
