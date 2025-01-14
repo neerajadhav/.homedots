@@ -2,20 +2,14 @@ from i3pystatus import Status
 
 status = Status()
 
-status.register("clock",
-    format=" %a %b %-d %y /  %I:%M:%S %p",)
-
-status.register("temp",
-    format=" {temp:.0f}°C",)
-
 status.register(
     'battery',
     interval=5,
-    format='[{status}] {percentage:.2f}% ({remaining:%E%hh:%Mm})',
+    format='[{status}] {percentage:.2f}% ({remaining:%E%hh:%Mm}) /',
     alert=True,
-    alert_percentage=15,
+    alert_percentage=20,
     critical_level_percentage=5,
-    critical_level_command="notify-send 'Critical Battery Level!'",
+    critical_level_command="notify-send '󰂃 Critical Battery Level!'",
     alert_format_title='Low Battery Warning',
     alert_format_body='Battery {battery_ident} is at {percentage:.2f}% ({remaining:%E%hh:%Mm})',
     status={
@@ -42,12 +36,19 @@ status.register(
     }
 )
 
+status.register("clock",
+    format=" %a %b %-d %y /  %I:%M:%S %p",)
+
+status.register("temp",
+    format=" {temp:.0f}°C",)
+
 status.register("disk",
     path="/",
     format=" {avail} ({percentage_free}%)",)
 
 status.register("pulseaudio",
-    format=" {volume}",)
+    format=" {volume}",
+    step=10)
 
 status.register(
     "network",
