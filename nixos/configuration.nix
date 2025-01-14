@@ -69,6 +69,8 @@
         };
       };
     };
+    qemuGuest.enable = true;
+    spice-vdagentd.enable = true; 
     gvfs.enable = true;
     tumbler.enable = true;
     gnome.gnome-keyring.enable = true;
@@ -98,12 +100,14 @@
   users.users.super = {
     isNormalUser = true;
     description = "Super";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "libvirtd" ];
     packages = with pkgs; [];
   };
 
   environment.systemPackages = with pkgs; [];
-  
+
+  users.groups.libvirtd.members = ["super"];
+
   virtualisation = {
     docker = {
       enable = true;
@@ -112,6 +116,8 @@
         setSocketVariable = true;
       };
     };
+    libvirtd.enable = true;
+    spiceUSBRedirection.enable = true;
   };
 
   programs = {
@@ -123,6 +129,7 @@
       ];
     };
     dconf.enable = true;
+    virt-manager.enable = true;
   };
 
   security = {
