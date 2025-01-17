@@ -19,7 +19,7 @@ let
       libnotify
       pywal
       autotiling
-      # nodejs_23
+      nodejs_22
       xfce.xfce4-screenshooter
       betterlockscreen
       bluez-tools
