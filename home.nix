@@ -20,7 +20,7 @@ let
       libnotify
       pywal
       autotiling
-      nodejs_23
+      # nodejs_23
       # xss-lock
       xfce.xfce4-screenshooter
       betterlockscreen
