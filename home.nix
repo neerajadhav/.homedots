@@ -12,7 +12,6 @@ let
       picom
       polkit_gnome
       pulseaudioFull
-      # rofi
       vim
       unrar
       unzip
@@ -21,7 +20,6 @@ let
       pywal
       autotiling
       # nodejs_23
-      # xss-lock
       xfce.xfce4-screenshooter
       betterlockscreen
       bluez-tools
@@ -33,22 +31,17 @@ let
       python314
       gsettings-desktop-schemas
       dconf-editor
-      # polybar
       killall
-      # zlib
       htop
       neofetch
       arandr
       pa_applet
       xarchiver
-      # i3pystatus
       dunst
-      # mpd
     ];
 
     userApps = with pkgs; [
       motrix
-      # asusctl
       gparted
       (nerdfonts.override { fonts = [ "Hack" ]; })
       brave
