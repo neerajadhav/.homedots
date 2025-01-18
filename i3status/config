@@ -16,11 +16,11 @@ general {
         markup = "pango"
 }
 
+order += "volume master"
 order += "disk /"
 order += "memory"
 order += "cpu_temperature 0"
 order += "wireless _first_"
-order += "volume master"
 order += "tztime localdate"
 order += "tztime localtime"
 order += "battery 1"
