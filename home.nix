@@ -53,6 +53,7 @@ let
       xscreensaver
       vlc
       onlyoffice-desktopeditors
+      xfce.ristretto
     ];
 
     appendApps = apps: systemApps ++ userApps ++ apps;
