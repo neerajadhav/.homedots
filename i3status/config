@@ -77,7 +77,7 @@ tztime localdate {
 }
 
 battery 1 {
-        format = "<span color='#34e0bf' size='large'>%status</span> <span> %percentage</span>"
+        format = "<span color='#34e0bf' size='large'>%status</span> <span> %percentage</span> /"
         format_down = "No battery"
         status_chr = "⚡"
         status_bat = ""
