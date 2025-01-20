@@ -24,6 +24,12 @@ in{
         };
     };
 
+    programs.git = {
+      enable = true;
+      userEmail = "adhavneeraj9500@gmail.com";
+      userName = "neerajadhav";
+    };
+
     home.username = "super";
     home.homeDirectory = "/home/super";
     home.packages = with pkgs; appendApps[];
