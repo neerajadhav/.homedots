@@ -8,7 +8,6 @@ let
       mendeley
       vscodium-fhs
       joplin-desktop
-      dropbox
       conda
       vlc
       onlyoffice-desktopeditors
