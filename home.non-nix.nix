@@ -14,7 +14,18 @@ let
       git
     ];
 
-    appendApps = apps: userApps ++ apps; 
+    fonts = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk-sans
+      noto-fonts-emoji
+      liberation_ttf
+      fira-code
+      fira-code-symbols
+      mplus-outline-fonts.githubRelease
+      nerd-fonts.hack
+    ];
+
+    appendApps = apps: userApps ++ fonts ++ apps; 
 in{
     nixpkgs = {
         config = {
