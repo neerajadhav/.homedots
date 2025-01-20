@@ -3,7 +3,6 @@
 let
     userApps = with pkgs; [
       motrix
-      gparted
       brave
       mendeley
       vscodium-fhs
