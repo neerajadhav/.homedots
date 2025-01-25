@@ -5,12 +5,12 @@ let
       motrix
       brave
       mendeley
-      vscodium-fhs
       joplin-desktop
       conda
       vlc
       onlyoffice-desktopeditors
       git
+      obsidian
     ];
 
     fonts = with pkgs; [
