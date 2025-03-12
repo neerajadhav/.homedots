@@ -43,6 +43,8 @@ in{
     home.homeDirectory = "/home/super";
     home.packages = with pkgs; appendApps[];
 
+    fonts.fontconfig.enable = true;
+
     # Do not change below configs
     home.stateVersion = "24.11";
     programs.home-manager.enable = true;
