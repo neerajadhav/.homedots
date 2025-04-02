@@ -6,7 +6,6 @@ let
       brave
       mendeley
       joplin-desktop
-      conda
       vlc
       onlyoffice-desktopeditors
       git
